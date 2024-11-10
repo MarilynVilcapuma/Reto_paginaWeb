@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/carrusel/ropa.css">
+</head>
+<body>
+
+    <header>
+        <div class="logotipo">
+            <img src="https://1000marcas.net/wp-content/uploads/2024/02/Adidas-Logo-1991.png" alt="logo" width="150">
+        </div>
+        <nav>
+          <ul>
+            <a href="/index.html"><li>Inicio</li></a>
+            <li>Tienda</li>
+            <li>Contacto</li>
+            <li><span class="cart-icon">🛒 (0)</span></li>
+          </ul>
+        </nav>
+    </header>
+
+    <section class="carousel">
+        <div class="carousel-container">
+            <div class="carousel-item active">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_814521-MPE76209593368_052024-O.webp" alt="Ropa deportiva">
+                <div class="info">
+                    <h3>Ropa Deportiva</h3>
+                    <p>Precio: s/50.00</p>
+                    <button class="add-to-cart">Agregar al carrito</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://win.com.pe/cdn/shop/files/legging-emana-work-out-palo-rosa-legging-winropadeportiva-s-palo-rosa-809451.jpg?v=1727735696" alt="Electrodomésticos">
+                <div class="info">
+                    <h3>Pantalon</h3>
+                    <p>Precio: s/50.00</p>
+                    <button class="add-to-cart">Agregar al carrito</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://win.com.pe/cdn/shop/files/legging-scrunch-print-3d-ab5-leggings-winropadeportiva-989965.jpg?v=1714001184" alt="Productos de hogar">
+                <div class="info">
+                    <h3>Tops</h3>
+                    <p>Precio: s/50.00</p>
+                    <button class="add-to-cart">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-button prev" onclick="changeSlide(-1)">❮</button>
+        <button class="carousel-button next" onclick="changeSlide(1)">❯</button>
+    </section>
+
+
+    <script src="/carrusel/script.js"></script>
+    
+</body>
+</html>

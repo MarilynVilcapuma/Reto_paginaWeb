@@ -1,0 +1,108 @@
+.banner {
+    position: relative; 
+    background-image: url('https://peruretail.sfo3.cdn.digitaloceanspaces.com/wp-content/uploads/FOTO-LANZAMIENTO.png'); /* Imagen de fondo */
+    background-size: cover; 
+    background-position: center; /* Centra la imagen */
+    height: 100vh; /* Altura del banner */
+    display: flex; /* Usar flexbox para centrar el texto */
+    align-items: center; /* Centrar verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
+}
+
+.banner img {
+    display: none; /* Oculta la imagen, solo se usará la de fondo */
+}
+
+.banner-text {
+    position: absolute; /* Posiciona el texto sobre el fondo */
+    color: white; /* Color del texto */
+    font-size: 2.5em; /* Tamaño de fuente grande */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra para mejor legibilidad */
+    text-align: center; /* Centra el texto */
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black; 
+    padding: 10px 20px; 
+  }
+  
+  .logotipo img {
+    max-width: 100%; 
+  }
+  
+  nav ul {
+    list-style: none; 
+    display: flex; 
+    margin: 0; 
+    padding: 0; 
+  }
+  
+  nav ul li {
+    margin: 0 15px; 
+    color: white; 
+    cursor: pointer; 
+  }
+  
+  nav ul li:hover {
+    text-decoration: underline; 
+  }
+  
+  .cart-icon {
+    color: white; 
+  }
+
+  
+  .categories {
+    padding: 20px;
+    background-color: #f4f4f4; 
+}
+
+.categories .category {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.categories{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+    gap: 20px; 
+}
+
+.container{
+    background-color: white; 
+    border: 1px solid #ccc; 
+    border-radius: 8px; 
+    overflow: hidden; 
+    text-align: center; 
+}
+
+.categories img {
+    width: 100%; /* Ancho completo */
+    height: 200px; /* Altura fija */
+    object-fit: cover; /* Mantiene la proporción de la imagen */
+}
+
+.texto {
+    padding: 10px;
+}
+
+.button {
+    background-color: #007BFF; /* Color de fondo azul */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    padding: 10px 15px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de fuente */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s, transform 0.2s; /* Transiciones suaves */
+    margin-top: 10px; /* Espacio superior */
+}
+
+.button:hover {
+    background-color: #0056b3; /* Color más oscuro al pasar el mouse */
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+}

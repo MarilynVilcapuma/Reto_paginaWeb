@@ -1,0 +1,95 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black; /* Fondo negro */
+    padding: 10px 20px; /* Espaciado interno */
+  }
+  
+  .logotipo img {
+    max-width: 100%; /* Asegura que el logo no se desborde */
+  }
+  
+  nav ul {
+    list-style: none; /* Elimina los puntos de la lista */
+    display: flex; /* Alinea los elementos en línea */
+    margin: 0; /* Elimina margen */
+    padding: 0; /* Elimina padding */
+  }
+  
+  nav ul li {
+    margin: 0 15px; /* Espacio entre los elementos */
+    color: white; /* Color de texto blanco */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el elemento */
+  }
+  
+  nav ul li:hover {
+    text-decoration: underline; /* Subraya el texto al pasar el mouse */
+  }
+  
+  .cart-icon {
+    color: white; /* Color del ícono del carrito */
+  }
+
+  
+.carousel {
+    position: relative;
+    max-width: 600px; /* Ajusta el ancho del carrusel */
+    margin: auto; /* Centra el carrusel */
+    overflow: hidden; /* Oculta el contenido que sobresale */
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+.carousel-container {
+    display: flex; /* Usar flexbox para el carrusel */
+    transition: transform 0.5s ease; /* Transición suave */
+}
+
+.carousel-item {
+    min-width: 100%; /* Cada item ocupa el 100% del ancho del carrusel */
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho */
+}
+
+.carousel-item img {
+    width: 100%; /* Ancho completo de la imagen */
+    height: auto; /* Mantiene la proporción */
+}
+
+.info {
+    padding: 15px;
+    text-align: center;
+    background-color: white; /* Fondo blanco */
+}
+
+.add-to-cart {
+    background-color: #007BFF; /* Color azul del botón */
+    color: white; /* Texto blanco */
+    border: none; /* Sin borde */
+    padding: 10px 15px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s; /* Transición suave */
+}
+
+.add-to-cart:hover {
+    background-color: #0056b3; /* Color más oscuro al pasar el mouse */
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.7); /* Fondo semi-transparente */
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%; /* Botones redondeados */
+}
+
+.prev {
+    left: 10px; /* Botón anterior a la izquierda */
+}
+
+.next {
+    right: 10px; /* Botón siguiente a la derecha */
+}
